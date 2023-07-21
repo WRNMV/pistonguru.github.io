@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PistonGuru</title>
+    <link rel="stylesheet" type="text/css" href="AboutUsCSS.css" />
+    <link rel="icon" href="../4 - Copy.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+          <img src="../2.png" alt="Car Logo" class="image1" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../PistonGuruIndex.html">Home</a></li>
+          <li><a href="AboutUsHTML.html">About Us</a></li>
+          <li><a href="../ContactUs/ContactUsHTML.html">Contact Us</a></li>
+        </ul>
+      </nav>    
+      
+      <script>
+        window.addEventListener("scroll", function() {
+          var navbar = document.getElementById("navbar");
+          if (window.scrollY > 0) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
+      </script>
+    
+    <section id="about-us" style="background-image: url(AboutUsBG.png); min-height: 600px; background-size: 100% 100%; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="center animate-float" style="visibility: visible;">
+                <h2 style="font-weight:bolder; font-family: 'Montserrat';">About PistonGuru</h2>
+                <br>
+                <p class="new_about">
+                    Welcome to PistonGuru, your premier destination for hassle-free car rentals in the beautiful Philippines. Established in 2020, PistonGuru is a trusted and reliable car rental company dedicated to providing exceptional service and a seamless experience for all your transportation needs.
+                </p>
+                <p class="new_about">
+                    At PistonGuru, we understand the importance of mobility and convenience when exploring the stunning landscapes and vibrant cities of the Philippines. Whether you're a tourist looking to discover the hidden gems of this tropical paradise or a local resident in need of a reliable transportation solution, we've got you covered.
+                </p>
+                <h2>Our Fleet</h2>
+                <p class="new_about">
+                    With an extensive fleet of well-maintained vehicles, PistonGuru offers a wide range of options to suit your preferences and requirements. From compact and fuel-efficient cars for city driving to spacious SUVs and vans for group adventures, we have the perfect vehicle for every occasion. All our cars are meticulously cleaned, regularly serviced, and equipped with modern features to ensure your comfort, safety, and peace of mind on the road.
+                </p>
+                <h2>Convenience and Accessibility</h2>
+                <p class="new_about">
+                    We believe that renting a car should be a hassle-free experience. That's why we strive to make the process as convenient and accessible as possible. Our user-friendly online platform allows you to browse our available vehicles, select your desired dates, and make a reservation with just a few clicks. Our dedicated team is always ready to assist you and provide personalized recommendations to help you find the ideal car for your needs.
+                </p>
+                <h2>Discover the Philippines with PistonGuru</h2>
+                <p class="new_about">
+                    The Philippines is a country known for its breathtaking beaches, picturesque mountains, and rich cultural heritage. Whether you're planning a beach getaway, an urban exploration, or a road trip to explore the countryside, PistonGuru is here to make your journey unforgettable. We are passionate about helping you create lifelong memories and providing you with the freedom to explore this remarkable country at your own pace.
+                </p>
+                <p class="new_about">
+                    Contact us today to book your next car rental with PistonGuru and embark on an unforgettable adventure across the enchanting landscapes of the Philippines. Experience convenience, reliability, and exceptional service with PistonGuru — your trusted partner in car rentals.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function checkVisibility() {
+    var elements = document.querySelectorAll(".animate-float");
+  
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var elementTop = element.getBoundingClientRect().top;
+      var windowHeight = window.innerHeight;
+  
+      if (elementTop < windowHeight * 0.8 && !element.classList.contains("animated")) {
+        element.classList.add("animated");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", checkVisibility);
+  window.addEventListener("load", checkVisibility);
+      </script>
+
+
+
+
+
+
+
+
+</body>
+    <!---------------------------------Footer------------------------>
+    <footer>
+      <hr />
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100093847226303&mibextid=LQQJ4d" target="_blank">
+              <img src="../fb logo.png" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/pistonguru_" target="_blank">
+              <img src="../twitter logo.png" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/pistonguru_official?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+              <img src="../ig logo.png" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <p>&copy; Made by Nepomuceno, Wayne Rovy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

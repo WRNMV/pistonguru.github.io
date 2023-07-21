@@ -1,0 +1,424 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.image1 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+  transition: transform 0.2s; /* Added transition for smooth animation */
+}
+
+nav.scrolled .image1 {
+  transform: scale(0.6); /* Adjust the scale value to your desired smaller size */
+  padding-top: 30px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  opacity: 1;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.scrolled {
+  height: 80px; /* Adjust the height to your desired value */
+  opacity: 0.85;
+  transform: translateY(-20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px; /* Adjust the padding to your desired value */
+}
+
+nav ul.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 100px; /* Adjust the margin to your desired value */
+  margin-top: 10px;
+}
+
+nav ul.nav-links li {
+  list-style: none;
+  margin-left: 40px; /* Adjust the margin to your desired value */
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 130px; /* Set a fixed width for the navigation links */
+  padding: 0;
+  color: #DC232E;
+  background-color: transparent;
+  font-size: 130%;
+  line-height: 50px;
+  margin-top: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  color: #333;
+  background-color: #DC232E;
+  transform: scale(0.9);
+}
+
+nav ul li:not(:hover) a {
+  background-color: transparent;
+}
+
+
+#myVideo {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #myVideo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #myVideo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  display: flex;
+  height: 250px; /* Adjust the height as per your requirements */
+}
+
+.container p {
+  flex: 1;
+  padding: 10px;
+  margin-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80%;
+  line-height: 2;
+  color: #000000;
+  font-weight: bold;
+}
+  
+.container img {
+  flex: 1;
+  object-fit: cover; 
+}
+
+.image-container {
+  display: flex;
+  background: #333;
+  max-width: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  padding-top: 50px;
+}
+
+.other-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.other-images img {
+  margin-top: 40px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 1px;
+  margin: 40px;
+  border: 2px solid #DC232E;
+  border-radius: 10px;
+}
+
+.image-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 44px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+
+.image-overlay:hover .overlay-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact-info {
+  background: #fff url(Team.png) no-repeat 90% 0;
+  background-image: url(Team.png);
+  background-position-x: 90%;
+  background-position-y: 0px;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 0;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+}
+
+.container3 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+}
+
+.row {
+  margin-right: 30px;
+  margin-left: 120px;
+  font-size: 17px;
+}
+
+.media, .media-body {
+  overflow: hidden;
+  zoom: 1;
+  font-family: 'Montserrat';
+}
+
+a {
+  color: #000000;
+    -webkit-transition: 300ms;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+a:hover {
+  color: #DC232E;
+}
+
+.partner {
+  width: 100%;
+  height: 750px;
+  background-image: url('OurPartnersBG2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container4 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.lead {
+  font-size: 21px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.gap {
+  margin-bottom: 50px;
+}
+
+.partners-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 90px;
+  margin-top: 20px;
+}
+
+.logo-image {
+  width: 140px;
+  height: 140px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.logo-image:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(50px);
+}
+
+.animate-float.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonials {
+  background-image: url('TestimonialsBG.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.container5 {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials h2 {
+  font-size: 58.5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #DC232E;
+  font-family: 'Montserrat';
+  
+}
+
+.testimonial {
+  flex: 0 0 calc(33.33% - 50px);
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.testimonial-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial:last-child {
+  margin-right: 0; /* Remove right margin for the last testimonial container */
+}
+
+.testimonial img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+.testimonial strong {
+  font-weight: bold;
+  color: #DC232E;
+  font-size: 22px;
+}
+
+
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+footer p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.social-media img {
+  max-width: 100%;
+  max-height: 100%;
+}
